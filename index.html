@@ -12,12 +12,41 @@
       <h1 class="title">
         Data for covid-lab
       </h1>
-      <p class="mb-4" >
+      <p  >
         ข้อมูลนี้ถูกรวบรวมขึ้นมาเพื่อใช้ใน <a href="https://covid-lab.pages.dev/">ระบบค้นหาแลปตรวจโควิด</a> <br>
         โดยข้อมูลถูกรวบรวมจากหลายช่องทาง และได้ข้อมูลตั้งต้นจาก <a href="https://data.go.th/dataset/labscovid19">กรมวิทยาศาสตร์การแพทย์</a> <a href="http://www.mtcouncil.org/site/content/view/1374">รายชื่อคลินิกเทคนิคการแพทย์เอกชนจากสภาเทคนิคการแพทย์</a> ข้อมูลที่ผู้ใช้แนะนำผ่านระบบ และตาม Social Media ต่างๆ ข้อมูลอาจมีการเปลี่ยนแปลงได้ตลอดเวลา
       </p>
 
-      <h4 class="is-size-4">Data Dictionary</h4>
+      <h4 class="is-size-4 mt-4">Json ล่าสุด</h4>
+      <code class="is-size-6">
+        https://covid-lab-data.pages.dev/latest.json
+      </code>
+
+      <h4 class="is-size-4 mt-4">API</h4>
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>วันที่</th>
+            <th>รายละเอียด</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>18 Jul 2021 00:00</td>
+            <td>เพิ่ม latitude, longitude และที่อยู่ของทุกแลป</td>
+            <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/18/data.json">Json</a></td>
+          </tr>
+          <tr>
+            <td>17 Jul 2021 16:56</td>
+            <td>ข้อมูลตั้งต้นของระบบ</td>
+            <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/17/data.json">Json</a></td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+      <h4 class="is-size-4 mt-4">Data Dictionary</h4>
       <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead>
           <tr>
@@ -41,54 +70,68 @@
 
           <tr>
             <td>3.</td>
+            <td>lat</td>
+            <td>latitude</td>
+          </tr>
+
+
+          <tr>
+            <td>4.</td>
+            <td>lng</td>
+            <td>longitude</td>
+          </tr>
+
+
+          <tr>
+            <td>5.</td>
             <td>adr</td>
             <td>ที่อยู่</td>
           </tr>
 
           <tr>
-            <td>4.</td>
+            <td>6.</td>
             <td>p</td>
             <td>จังหวัด</td>
           </tr>
 
           <tr>
-            <td>5.</td>
+            <td>7.</td>
             <td>pp</td>
             <td>ประเภทของแลป pu=รัฐบาล, v=เอกชน</td>
           </tr>
 
           <tr>
-            <td>6.</td>
+            <td>8.</td>
             <td>mob</td>
             <td>เบอร์โทรศัพท์</td>
           </tr>
 
           <tr>
-            <td>7.</td>
+            <td>9.</td>
             <td>ema</td>
             <td>อีเมล</td>
           </tr>
 
           <tr>
-            <td>8.</td>
+            <td>10.</td>
             <td>lin</td>
             <td>LINE</td>
           </tr>
 
           <tr>
-            <td>9.</td>
+            <td>11.</td>
             <td>w</td>
             <td>Website</td>
           </tr>
 
           <tr>
-            <td>10.</td>
+            <td>12.</td>
             <td>rm</td>
             <td>หมายเหตุ และรายละเอียดต่างๆ</td>
           </tr>
 
           <tr>
-            <td>11.</td>
+            <td>13.</td>
             <td>src</td>
             <td>ลิงค์ข้อมูลอ้างอิง</td>
           </tr>
@@ -96,24 +139,7 @@
         </tbody>
       </table>
 
-      <h4 class="is-size-4">API</h4>
-      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-        <thead>
-          <tr>
-            <th>วันที่</th>
-            <th>Json</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>17 Jul 20201 16:56</td>
-            <td>https://covid-lab-data.pages.dev/2021/07/17/data.json</td>
-            <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/17/data.json">Json</a></td>
-          </tr>
-         
-        </tbody>
-      </table>
+     
     </div>
   </section>
   </body>
