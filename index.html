@@ -14,7 +14,7 @@
       </h1>
       <p  >
         ข้อมูลนี้ถูกรวบรวมขึ้นมาเพื่อใช้ใน <a href="https://covid-lab.pages.dev/">ระบบค้นหาแลปตรวจโควิด</a> <br>
-        โดยข้อมูลถูกรวบรวมจากหลายช่องทาง และได้ข้อมูลตั้งต้นจาก <a href="https://data.go.th/dataset/labscovid19">กรมวิทยาศาสตร์การแพทย์</a> <a href="http://www.mtcouncil.org/site/content/view/1374">รายชื่อคลินิกเทคนิคการแพทย์เอกชนจากสภาเทคนิคการแพทย์</a> ข้อมูลที่ผู้ใช้แนะนำผ่านระบบ และตาม Social Media ต่างๆ ข้อมูลอาจมีการเปลี่ยนแปลงได้ตลอดเวลา
+        โดยข้อมูลถูกรวบรวมจากหลายช่องทาง และได้ข้อมูลตั้งต้นจาก <a href="https://data.go.th/dataset/labscovid19">กรมวิทยาศาสตร์การแพทย์</a> <a href="http://www.mtcouncil.org/site/content/view/1374">รายชื่อคลินิกเทคนิคการแพทย์เอกชนจากสภาเทคนิคการแพทย์</a> <a href="https://mtc-hotline-labs.web.app/">รายชื่อห้องปฏิบัติการ/คลินิกเทคนิคการแพทย์ที่เปิดให้บริการตรวจเชื้อไวรัสก่อโรคโควิด 19 ด้วย Antigen Test Kit</a> (วันที่อัพเดท 19/07/2021) ข้อมูลที่ผู้ใช้แนะนำผ่านระบบ และตาม Social Media ต่างๆ ข้อมูลอาจมีการเปลี่ยนแปลงได้ตลอดเวลา
       </p>
 
       <h4 class="is-size-4 mt-4">Json ล่าสุด</h4>
@@ -32,6 +32,11 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>19 Jul 2021 00:00</td>
+            <td>เพิ่มประเภทของ Lab (RT PCR, Antigen Test, และ Fit to fly)</td>
+            <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/19/data.json">Json</a></td>
+          </tr>
           <tr>
             <td>18 Jul 2021 00:00</td>
             <td>เพิ่ม latitude, longitude และที่อยู่ของทุกแลป</td>
@@ -134,6 +139,11 @@
             <td>13.</td>
             <td>src</td>
             <td>ลิงค์ข้อมูลอ้างอิง</td>
+          </tr>
+          <tr>
+            <td>14.</td>
+            <td>lt</td>
+            <td>ประเภทการตรวจ RT=RT PCR, AT=Antigen Test, FTF=Fit to fly</td>
           </tr>
 
         </tbody>
