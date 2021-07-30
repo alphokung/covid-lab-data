@@ -13,7 +13,7 @@
         Data for covid-lab
       </h1>
       <p  >
-        ข้อมูลนี้ถูกรวบรวมขึ้นมาเพื่อใช้ใน <a href="https://covid-lab.pages.dev/">ระบบค้นหาแลปตรวจโควิด</a> <br>
+        ข้อมูลนี้ถูกรวบรวมขึ้นมาเพื่อใช้ใน <a href="https://covid-lab.pages.dev/">ระบบค้นหาแล็บตรวจโควิด</a> <br>
         โดยข้อมูลถูกรวบรวมจากหลายช่องทาง และได้ข้อมูลตั้งต้นจาก <a href="https://data.go.th/dataset/labscovid19">กรมวิทยาศาสตร์การแพทย์</a> <a href="http://www.mtcouncil.org/site/content/view/1374">รายชื่อคลินิกเทคนิคการแพทย์เอกชนจากสภาเทคนิคการแพทย์</a> <a href="https://mtc-hotline-labs.web.app/">รายชื่อห้องปฏิบัติการ/คลินิกเทคนิคการแพทย์ที่เปิดให้บริการตรวจเชื้อไวรัสก่อโรคโควิด 19 ด้วย Antigen Test Kit</a> (วันที่อัพเดท 19/07/2021) ข้อมูลที่ผู้ใช้แนะนำผ่านระบบ และตาม Social Media ต่างๆ ข้อมูลอาจมีการเปลี่ยนแปลงได้ตลอดเวลา
       </p>
 
@@ -33,18 +33,23 @@
         </thead>
         <tbody>
           <tr>
+            <td>30 Jul 2021 20:00</td>
+            <td>เพิ่มข้อมูล id, ประเภทของแล็บ (tid)</td>
+            <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/30/data.json">Json</a></td>
+          </tr>
+          <tr>
             <td>22 Jul 2021 16:00</td>
             <td>เพิ่มข้อมูล IsFree เพื่อแสดงว่าไม่คิดค่าบริการ</td>
             <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/21/data.json">Json</a></td>
           </tr>
           <tr>
             <td>21 Jul 2021 15:00</td>
-            <td>เพิ่มข้อมูล IsClose เพื่อแสดงข้อมูลว่าแลปยังเปิดรับอยู่หรือไม่</td>
+            <td>เพิ่มข้อมูล IsClose เพื่อแสดงข้อมูลว่าแล็บยังเปิดรับอยู่หรือไม่</td>
             <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/21/data.json">Json</a></td>
           </tr>
           <tr>
             <td>19 Jul 2021 18:00</td>
-            <td>เพิ่มข้อมูล Drive Tru และ Walk-In, แยก field ประเภทของแลป</td>
+            <td>เพิ่มข้อมูล Drive Tru และ Walk-In, แยก field ประเภทของแล็บ</td>
             <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/19/data-2.json">Json</a></td>
           </tr>
           <tr>
@@ -54,7 +59,7 @@
           </tr>
           <tr>
             <td>18 Jul 2021 00:00</td>
-            <td>เพิ่ม latitude, longitude และที่อยู่ของทุกแลป</td>
+            <td>เพิ่ม latitude, longitude และที่อยู่ของทุกแล็บ</td>
             <td><a class="button is-fullwidth is-primary" href="https://covid-lab-data.pages.dev/2021/07/18/data.json">Json</a></td>
           </tr>
           <tr>
@@ -85,7 +90,7 @@
           <tr>
             <td>2.</td>
             <td>n</td>
-            <td>ชื่อแลป</td>
+            <td>ชื่อแล็บ</td>
           </tr>
 
           <tr>
@@ -117,7 +122,7 @@
           <tr>
             <td>7.</td>
             <td>pp</td>
-            <td>ประเภทของแลป pu=รัฐบาล, v=เอกชน</td>
+            <td>ประเภทของแล็บ pu=รัฐบาล, v=เอกชน</td>
           </tr>
 
           <tr>
@@ -194,9 +199,16 @@
             <td>f</td>
             <td>ไม่คิดค่าบริการ</span></td>
           </tr>
-
-          
-
+          <tr>
+            <td>22.</td>
+            <td>id</td>
+            <td>Id ของแล็บ</span></td>
+          </tr>
+          <tr>
+            <td>23.</td>
+            <td>tid</td>
+            <td>ประเภทของแล็บ (c=คลินิก, prh=โรงพยาบาลรัฐ, pvh=โรงพยาบาลเอกชน, pl=แล็บเอกชน)</span></td>
+          </tr>
         </tbody>
       </table>
     </div>
